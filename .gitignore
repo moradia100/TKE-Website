@@ -237,3 +237,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# VisualStudio Code IGNORE
+.vscode/*
+.vscode/settings.json
