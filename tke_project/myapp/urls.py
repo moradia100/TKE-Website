@@ -4,5 +4,5 @@ from . import philan
 
 urlpatterns = [
 		path('', views.index),
-		path('philanthropy/', philan.index)
+		path('philanthropy/', philan.index),
 ]
