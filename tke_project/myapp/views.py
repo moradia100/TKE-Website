@@ -4,4 +4,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("TKE-Website")
+    context = {
+        "variable":"Welcome To TKE Theta-Pi boiiiii",
+        "title":"TKE",
+    }
+    return render(request, "index.html", context=context)
