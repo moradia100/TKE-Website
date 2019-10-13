@@ -8,4 +8,4 @@ def index(request):
         "variable":"App",
         "title":"TKE",
     }
-    return render(request, "philanthropy.html", context=context)
+    return render(request, "sections/philanthropy.html", context=context)
