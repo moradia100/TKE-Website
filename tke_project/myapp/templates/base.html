@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static "css/foundation.css" %}">
-    <link rel="stylesheet" href="{% static "foundation/css/app.css" %}">
+    <link rel="stylesheet" href="{% static "css/app.css" %}">
 
     <!-- Project Stylesheet -->
     <link rel="stylesheet" href="{% static "css/style.css" %}">
@@ -33,11 +33,10 @@
 
     {% block content %}
     {% endblock %}
-    <script src="{% static "foundation/js/vendor/jquery.js" %}"></script>
-    <script src="{% static "foundation/js/vendor/what-input.js" %}"></script>
-    <script src="{% static "foundation/js/vendor/foundation.js" %}"></script>
-    <script src="{% static "foundation/js/app.js" %}"></script>
-
+    <script src="{% static "js/vendor/jquery.js" %}"></script>
+    <script src="{% static "js/vendor/what-input.js" %}"></script>
+    <script src="{% static "js/vendor/foundation.js" %}"></script>
+    <script src="{% static "js/app.js" %}"></script>
     {% block scripts %}
     {% endblock %}
   </body>
