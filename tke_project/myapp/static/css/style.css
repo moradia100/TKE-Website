@@ -279,7 +279,7 @@ ul li a {
 
 
 .thumbnail {
-  margin-bottom: 0rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -515,3 +515,40 @@ ul li a {
   text-transform: none;
 }
 /* /About us Font */
+
+
+/* Philanthropy */
+#event-title{
+    padding-left: 50px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+/* Line modifications */
+hr {
+  border-color: black;
+  max-width: none;
+}
+
+hr.break_line{
+  overflow: visible; /* For IE */
+
+  border-top: medium double #333; 
+  border-bottom: medium double #333;
+
+  text-align: center;
+}
+
+hr.break_line:after {
+  content: "⎊";
+  display: inline-block;
+  position: relative;
+
+  top: -0.7em; /*Sets the Y-position */
+  font-size: 1.5em; /*Sets size*/
+  padding: 0 0.15em;  /* Padding size to cover <hr> at a certain area */
+  background: white;
+  color: #F8021E;
+}
+
+/* /Philanthropy */
