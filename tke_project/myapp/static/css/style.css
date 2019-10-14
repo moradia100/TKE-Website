@@ -7,7 +7,7 @@
 }
 
 .top-bar, .top-bar ul {
-  background-color: white;
+  background-color: #5C5A5A;
   font-size: 27px;
 }
 
@@ -16,8 +16,9 @@
 }
 
 ul li a {
-  color: black;
+  color: white;
   display:block;
+  
  }
  
  ul li a:hover, ul li a:focus {
@@ -25,7 +26,7 @@ ul li a {
  }
 
  .hvr-underline-from-center:before {
-  background: #5C5A5A;
+  background: #C50015;
 }
 
 #TKENewLOGO {
@@ -558,14 +559,6 @@ hr {
   max-width: none;
 }
 
-hr.break_line{
-  overflow: visible; /* For IE */
-
-  border-top: medium double #333; 
-  border-bottom: medium double #333;
-
-  text-align: center;
-}
 
 hr.break_line:after {
   content: "⎊";
