@@ -200,3 +200,35 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+.thumbnail {
+  margin-bottom: 0rem;
+}
+
+
+.event-container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.event-bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.event-bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+
+.text-center {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+/* .pagination-event a:hover:not(.active) {background-color: #ddd;} */
