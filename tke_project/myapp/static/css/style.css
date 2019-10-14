@@ -12,7 +12,6 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: auto;
 }
@@ -82,9 +81,9 @@
 }
 
 .imgBox {
-    display: grid;
-    height: 100%;
-    width: 100%;
+    width: 100vw;
+    height: 65vh;
+    object-fit: fill;
 }
 
 .active, .dot:hover {
