@@ -238,6 +238,12 @@ ul li a {
   margin-bottom: 3%;
 }
 
+.photo-container-title{
+  margin: 5%;
+  padding: 5%;
+  border-style: solid;
+}
+
 @media (max-width: 1200px) {
   #photos {
   -moz-column-count:    4;
