@@ -218,7 +218,7 @@ ul li a {
   column-count:         4;
   column-gap:           0px;
   max-height: 60vh;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 #photos img {
