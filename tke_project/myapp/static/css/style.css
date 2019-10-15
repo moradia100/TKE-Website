@@ -333,8 +333,8 @@ ul li a {
 
 .text-center {
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 50px;
+  /* padding-top: 25px;
+  padding-bottom: 50px; */
 }
 /* .pagination-event a:hover:not(.active) {background-color: #ddd;} */
 
@@ -573,3 +573,10 @@ hr.break_line:after {
 }
 
 /* /Philanthropy */
+
+/* Post */
+.button.alert {
+  background-color: #c50015;
+  color:#fefefe;
+}
+/* /Post */
