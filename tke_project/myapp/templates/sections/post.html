@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block head %}
+{% endblock %}
+
+{% block header %}
+
+<!-- templates/post.html -->
+
+<!-- <h3>Create Post Page</h3>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Submit New Post</button>
+</form> -->
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="row">
+        <div class="large-12 columns">
+            <label>Title
+                <input name="title" required="" id="id_title" type="text" placeholder="Title" />
+            </label>
+        </div>
+    </div>
+    <div class="row">
+          <div class="large-12 columns">
+            <label>Description
+              <textarea name="description" required="" id="id_description" placeholder="Description"></textarea>
+            </label>
+          </div>
+    </div>
+    <p><label for="id_cover">Cover:</label> <input type="file" name="cover" accept="image/*" required="" id="id_cover"></p>
+    <button type="submit" class="alert button">Submit New Post</button>
+</form>
+
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
