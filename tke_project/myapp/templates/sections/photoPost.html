@@ -1,4 +1,11 @@
-<h1>Create Post Page</h1>
+{% extends "base.html" %}
+
+{% block head %}
+{% endblock %}
+
+{% block header %}
+
+<h1>Submit a Photo</h1>
 <form method="POST" enctype="multipart/form-data">
   {% csrf_token %}
   <div class="row">
@@ -8,5 +15,13 @@
           </label>
       </div>
   </div>
-  <p><label for="id_cover">Cover:</label> <input type="file" name="Image" accept="photo/*" required="" id="id_cover"></p>
+  <p><label for="id_cover">Photo:</label> <input type="file" name="Image" accept="image/*" required="" id="id_cover"></p>
+  <button type="submit" class="alert button">Submit</button>
   </form>
+
+
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
