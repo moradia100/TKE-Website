@@ -1,6 +1,12 @@
 <h1>Create Post Page</h1>
 <form method="POST" enctype="multipart/form-data">
   {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Submit New Post</button>
-</form>
+  <div class="row">
+      <div class="large-12 columns">
+          <label>Title
+              <input name="title" required="" id="id_title" type="text" placeholder="Title" />
+          </label>
+      </div>
+  </div>
+  <p><label for="id_cover">Cover:</label> <input type="file" name="Image" accept="photo/*" required="" id="id_cover"></p>
+  </form>
