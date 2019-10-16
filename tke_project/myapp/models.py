@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import datetime 
 
 # Create your models here.
 
@@ -6,7 +7,13 @@ from django.db import models
 class Event(models.Model):
     title = models.TextField()
     description = models.TextField()
-    cover = models.ImageField(upload_to='images/')
+    published_date = models.DateTimeField(auto_now_add=True, blank=True) #Current date
+    created_date = models.DateTimeField(blank=True, null=True)  #Future Date
+    max_volunteers = models.IntegerField(default=1)
+    current_volunteers = models.IntegerField(default=1)
+    cover = models.ImageField(upload_to='event_images/')
+
+    status = models.BooleanField(default=True)
 
     def __str__(self):
         return self.title

@@ -580,3 +580,9 @@ hr.break_line:after {
   color:#fefefe;
 }
 /* /Post */
+
+/* Forms */
+[type="number"] {
+  width: 6%;
+}
+

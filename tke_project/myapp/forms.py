@@ -5,7 +5,7 @@ class EventForm(forms.ModelForm):
 
     class Meta:
         model = Event
-        fields = ['title', 'description', 'cover']
+        fields = ['title', 'description', 'created_date', 'max_volunteers', 'status', 'cover']
 
 class GalleryForm(forms.ModelForm):
 

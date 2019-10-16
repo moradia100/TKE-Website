@@ -15,12 +15,12 @@ from .forms import EventForm
 
 
 
-def index(request):
-    context = {
-        "variable":"App",
-        "title":"TKE",
-    }
-    return render(request, "sections/philanthropy.html", context=context)
+# def index(request):
+#     context = {
+#         "variable":"App",
+#         "title":"TKE",
+#     }
+#     return render(request, "sections/philanthropy.html", context=context)
 
 # A page representing a list of objects.
 class EventView(ListView):
