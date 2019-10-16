@@ -5,8 +5,9 @@ from . import philan
 
 
 urlpatterns = [
-		path('', views.index),
+		path('', views.GalleryView.as_view(), name='index'),
 		#path('philanthropy/', philan.index),
 		path('philanthropy/', philan.EventView.as_view(), name='philanthropy'),
 		path('post/', philan.CreateEventView.as_view()),
+		path('photoPost/',views.CreateImageView.as_view()),
 ]

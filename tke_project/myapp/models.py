@@ -10,3 +10,10 @@ class Event(models.Model):
 
     def __str__(self):
         return self.title
+
+class Gallery(models.Model):
+    title = models.TextField()
+    Image = models.ImageField(upload_to='photos/')
+
+    def __str__(self):
+        return self.title
